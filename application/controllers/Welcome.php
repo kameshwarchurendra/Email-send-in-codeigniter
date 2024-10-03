@@ -14,8 +14,8 @@ class Welcome extends CI_Controller {
 				'protocol'  => 'smtp',
 				'smtp_host' => 'smtp.gmail.com',
 				'smtp_port' => 587,
-				'smtp_user' => 'kameshwarchurendra1995@gmail.com',
-				'smtp_pass' => 'tmddxfhekzeuabrw',
+				'smtp_user' => 'example@gmail.com',
+				'smtp_pass' => 'XXXXXXXXXXXXX',
 				'smtp_crypto' => 'tls', // Enable TLS
 				'mailtype'  => 'html',
 				'charset'   => 'utf-8',
@@ -25,8 +25,8 @@ class Welcome extends CI_Controller {
 
 			$this->email->initialize($config);
 
-			$this->email->from('kameshwarchurendra1995@gmail.com', 'Kammo'); 
-			$this->email->to('churendrakameshwar@gmail.com');
+			$this->email->from('exmplefrom@gmail.com', 'test'); 
+			$this->email->to('exmpleto@gmail.com');
 			$this->email->subject('Email Test');
 			$this->email->message('<p>This is a test email sent from CodeIgniter</p>');
 
